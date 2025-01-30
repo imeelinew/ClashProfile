@@ -1191,11 +1191,13 @@ proxy-groups:
       - DIRECT
       - AMY
       - US
+    icon: https://fastly.jsdelivr.net/gh/clash-verge-rev/clash-verge-rev.github.io@main/docs/assets/icons/apple.svg
   - name: YouTube
     type: select
     proxies:
       - AMY
       - US
+    icon: https://fastly.jsdelivr.net/gh/clash-verge-rev/clash-verge-rev.github.io@main/docs/assets/icons/youtube.svg
   - name: Spotify
     type: select
     proxies:
@@ -1248,6 +1250,7 @@ proxy-groups:
     proxies:
       - AMY
       - US
+    icon: https://fastly.jsdelivr.net/gh/clash-verge-rev/clash-verge-rev.github.io@main/docs/assets/icons/twitter.svg
   - name: US
     type: url-test
     url: https://www.google.com
@@ -1267,6 +1270,7 @@ proxy-groups:
       - US 11
       - US 12
       - US 13
+    icon: https://fastly.jsdelivr.net/gh/clash-verge-rev/clash-verge-rev.github.io@main/docs/assets/icons/flags/us.svg
   - name: Hijacking
     type: select
     proxies:
