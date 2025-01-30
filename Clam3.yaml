@@ -1217,6 +1217,7 @@ proxy-groups:
     proxies:
       - AMY
       - US
+    icon: https://fastly.jsdelivr.net/gh/clash-verge-rev/clash-verge-rev.github.io@main/docs/assets/icons/google.svg
   - name: AI
     type: select
     proxies:
@@ -1228,6 +1229,7 @@ proxy-groups:
       - DIRECT
       - AMY
       - US
+    icon: https://fastly.jsdelivr.net/gh/clash-verge-rev/clash-verge-rev.github.io@main/docs/assets/icons/steam.svg
   - name: SteamCN
     type: select
     proxies:
@@ -1240,6 +1242,7 @@ proxy-groups:
       - DIRECT
       - AMY
       - US
+    icon: https://fastly.jsdelivr.net/gh/clash-verge-rev/clash-verge-rev.github.io@main/docs/assets/icons/microsoft.svg
   - name: Twitter
     type: select
     proxies:
