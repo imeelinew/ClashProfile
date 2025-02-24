@@ -2241,8 +2241,6 @@ rules:
   - IP-CIDR,172.16.0.0/12,China-Websites
   - IP-CIDR,127.0.0.0/8,China-Websites
   - IP-CIDR,100.64.0.0/10,China-Websites
-  # Keywords
-  - DOMAIN-KEYWORD,gofile,一元
   # Final
   - DOMAIN,blizzard.nefficient.co.kr,Final
   - DOMAIN,blzddist1-a.akamaihd.net,Final
