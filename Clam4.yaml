@@ -908,12 +908,6 @@ proxy-groups:
       - AMY
       - US
     icon: https://fastly.jsdelivr.net/gh/clash-verge-rev/clash-verge-rev.github.io@main/docs/assets/icons/youtube.svg
-  - name: Spotify
-    type: select
-    proxies:
-      - DIRECT
-      - AMY
-      - US
   - name: Bilibili
     type: select
     proxies:
@@ -1229,35 +1223,6 @@ rules:
   - IP-CIDR,120.92.153.217/32,Bilibili
   - IP-CIDR,134.175.207.130/32,Bilibili
   - IP-CIDR,203.107.1.0/24,Bilibili
-  # Spotify
-  - DOMAIN,cdn-spotify-experiments.conductrics.com,Spotify
-  - DOMAIN,heads-ak-spotify-com.akamaized.net,Spotify
-  - DOMAIN,audio4-ak-spotify-com.akamaized.net,Spotify
-  - DOMAIN,spotify.com.edgesuite.net,Spotify
-  - DOMAIN,spotify.map.fastly.net,Spotify
-  - DOMAIN,spotify.map.fastlylb.net,Spotify
-  - DOMAIN-SUFFIX,audio-ak-spotify-com.akamaized.net,Spotify
-  - DOMAIN-SUFFIX,byspotify.com,Spotify
-  - DOMAIN-SUFFIX,heads4-ak-spotify-com.akamaized.net,Spotify
-  - DOMAIN-SUFFIX,pscdn.co,Spotify
-  - DOMAIN-SUFFIX,scdn.co,Spotify
-  - DOMAIN-SUFFIX,spoti.fi,Spotify
-  - DOMAIN-SUFFIX,spotify-com.akamaized.net,Spotify
-  - DOMAIN-SUFFIX,spotify-everywhere.com,Spotify
-  - DOMAIN-SUFFIX,spotify.app.link,Spotify
-  - DOMAIN-SUFFIX,spotify.com,Spotify
-  - DOMAIN-SUFFIX,spotify.design,Spotify
-  - DOMAIN-SUFFIX,spotifycdn.com,Spotify
-  - DOMAIN-SUFFIX,spotifycdn.net,Spotify
-  - DOMAIN-SUFFIX,spotifycharts.com,Spotify
-  - DOMAIN-SUFFIX,spotifycodes.com,Spotify
-  - DOMAIN-SUFFIX,spotifyforbrands.com,Spotify
-  - DOMAIN-SUFFIX,spotifyjobs.com,Spotify
-  - DOMAIN-SUFFIX,spotifynewsroom.jp,Spotify
-  - DOMAIN-SUFFIX,spotilocal.com,Spotify
-  - DOMAIN-SUFFIX,tospotify.com,Spotify
-  - DOMAIN-KEYWORD,spotify,Spotify
-  - PROCESS-NAME,com.spotify.music,Spotify
   # Youtube
   - DOMAIN-SUFFIX,googlevideo.com,YouTube
   - DOMAIN-SUFFIX,youtube.com,YouTube
