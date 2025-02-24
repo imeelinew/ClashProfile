@@ -831,11 +831,6 @@ proxies:
       plugin-opts: { mode: http, host: hI2140Zkcn.microsoft.com },
     }
 proxy-groups:
-  - name: Final
-    type: select
-    proxies:
-      - AMY
-      - DIRECT
   - name: AMY
     type: select
     proxies:
@@ -895,6 +890,7 @@ proxy-groups:
       - SG 02
       - SG 03
       - SG 04
+    icon: https://fastly.jsdelivr.net/gh/clash-verge-rev/clash-verge-rev.github.io@main/docs/assets/icons/adjust.svg
   - name: Apple
     type: select
     proxies:
@@ -971,10 +967,16 @@ proxy-groups:
     type: select
     proxies:
       - REJECT
+    icon: https://fastly.jsdelivr.net/gh/clash-verge-rev/clash-verge-rev.github.io@main/docs/assets/icons/block.svg
   - name: China-Websites
     type: select
     proxies:
       - DIRECT
+      - AMY
+    icon: https://fastly.jsdelivr.net/gh/clash-verge-rev/clash-verge-rev.github.io@main/docs/assets/icons/flags/cn.svg
+  - name: Final
+    type: select
+    proxies:
       - AMY
 rules:
   - DOMAIN,assets1.xboxlive.com,DIRECT
