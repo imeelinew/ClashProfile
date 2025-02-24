@@ -908,16 +908,13 @@ proxy-groups:
       - AMY
       - US
     icon: https://fastly.jsdelivr.net/gh/clash-verge-rev/clash-verge-rev.github.io@main/docs/assets/icons/youtube.svg
-  - name: Bilibili
-    type: select
-    proxies:
-      - DIRECT
   - name: Netflix
     type: select
     proxies:
       - DIRECT
       - AMY
       - US
+    icon: https://fastly.jsdelivr.net/gh/clash-verge-rev/clash-verge-rev.github.io@main/docs/assets/icons/netflix.svg
   - name: Google
     type: select
     proxies:
@@ -929,6 +926,7 @@ proxy-groups:
     proxies:
       - AMY
       - US
+    icon: https://fastly.jsdelivr.net/gh/clash-verge-rev/clash-verge-rev.github.io@main/docs/assets/icons/chatgpt.svg
   - name: Steam
     type: select
     proxies:
@@ -936,12 +934,6 @@ proxy-groups:
       - AMY
       - US
     icon: https://fastly.jsdelivr.net/gh/clash-verge-rev/clash-verge-rev.github.io@main/docs/assets/icons/steam.svg
-  - name: SteamCN
-    type: select
-    proxies:
-      - DIRECT
-      - AMY
-      - US
   - name: Microsoft
     type: select
     proxies:
@@ -1065,24 +1057,23 @@ rules:
   - DOMAIN-KEYWORD,steambroadcast,Steam
   - DOMAIN-KEYWORD,steamstore,Steam
   - DOMAIN-KEYWORD,steamuserimages,Steam
-  # SteamCN
-  - DOMAIN,csgo.wmsj.cn,SteamCN
-  - DOMAIN,dl.steam.clngaa.com,SteamCN
-  - DOMAIN,dl.steam.ksyna.com,SteamCN
-  - DOMAIN,dota2.wmsj.cn,SteamCN
-  - DOMAIN,st.dl.bscstorage.net,SteamCN
-  - DOMAIN,st.dl.eccdnx.com,SteamCN
-  - DOMAIN,st.dl.pinyuncloud.com,SteamCN
-  - DOMAIN,steampipe.steamcontent.tnkjmec.com,SteamCN
-  - DOMAIN,steampowered.com.8686c.com,SteamCN
-  - DOMAIN,steamstatic.com.8686c.com,SteamCN
-  - DOMAIN,wmsjsteam.com,SteamCN
-  - DOMAIN,xz.pphimalayanrt.com,SteamCN
-  - DOMAIN-SUFFIX,cm.steampowered.com,SteamCN
-  - DOMAIN-SUFFIX,steamchina.com,SteamCN
-  - DOMAIN-SUFFIX,steamcontent.com,SteamCN
-  - DOMAIN-SUFFIX,steamserver.net,SteamCN
-  - DOMAIN-SUFFIX,steamusercontent.com,SteamCN
+  - DOMAIN,csgo.wmsj.cn,DIRECT
+  - DOMAIN,dl.steam.clngaa.com,DIRECT
+  - DOMAIN,dl.steam.ksyna.com,DIRECT
+  - DOMAIN,dota2.wmsj.cn,DIRECT
+  - DOMAIN,st.dl.bscstorage.net,DIRECT
+  - DOMAIN,st.dl.eccdnx.com,DIRECT
+  - DOMAIN,st.dl.pinyuncloud.com,DIRECT
+  - DOMAIN,steampipe.steamcontent.tnkjmec.com,DIRECT
+  - DOMAIN,steampowered.com.8686c.com,DIRECT
+  - DOMAIN,steamstatic.com.8686c.com,DIRECT
+  - DOMAIN,wmsjsteam.com,DIRECT
+  - DOMAIN,xz.pphimalayanrt.com,DIRECT
+  - DOMAIN-SUFFIX,cm.steampowered.com,DIRECT
+  - DOMAIN-SUFFIX,steamchina.com,DIRECT
+  - DOMAIN-SUFFIX,steamcontent.com,DIRECT
+  - DOMAIN-SUFFIX,steamserver.net,DIRECT
+  - DOMAIN-SUFFIX,steamusercontent.com,DIRECT
   # Apple
   - DOMAIN-SUFFIX,aaplimg.com,Apple
   - DOMAIN-SUFFIX,Apple.co,Apple
@@ -1101,128 +1092,128 @@ rules:
   - DOMAIN-SUFFIX,nexitally.com,Final
   - DOMAIN-SUFFIX,amysecure.com,Final
   - DOMAIN-SUFFIX,amytele.com,Final
-  - DOMAIN,0gr4uqmtt8y41hcjsgrzdrc31.ourdvsss.com,Bilibili
-  - DOMAIN,0gr4uqmtt8y41hcjsgrzdrc3s.ourdvsss.com,Bilibili
-  - DOMAIN,0gr4uqmtt8y41hcjsgrzdrc3z.ourdvsss.com,Bilibili
-  - DOMAIN,0gr4uqmtt8y41hcjsgrzdrctt.ourdvsss.com,Bilibili
-  - DOMAIN,0gr4uqmtt8y41hcjsgrzdrctu.ourdvsss.com,Bilibili
-  - DOMAIN,0gr4uqmtt8y41hcjz8yzdnc31.ourdvsss.com,Bilibili
-  - DOMAIN,0gr4uqmtt8y41hcjz8yzdnc3t.ourdvsss.com,Bilibili
-  - DOMAIN,0gr4uqmtt8y41hcjzgazdrpba.ourdvsss.com,Bilibili
-  - DOMAIN,0gr4uqmtt8y41hcjzgazdrpbz.ourdvsss.com,Bilibili
-  - DOMAIN,0gr4uqmtt8y41hcjzgazdrpjt.ourdvsss.com,Bilibili
-  - DOMAIN,0gr5dgmttgha1hcj38yzdncb3.ourdvsss.com,Bilibili
-  - DOMAIN,112-81-125-43.dhost.00cdn.com,Bilibili
-  - DOMAIN,113-219-145-1.ksyungslb.com,Bilibili
-  - DOMAIN,114-236-92-129.ksyungslb.com,Bilibili
-  - DOMAIN,180-101-74-1.ksyungslb.com,Bilibili
-  - DOMAIN,1geadrmttge3nhcjwgazdope.ourdvsss.com,Bilibili
-  - DOMAIN,1geadrmttge3nhcjwgwzdqqe.ourdvsss.com,Bilibili
-  - DOMAIN,1gr3uomttgr31hcjo8yzdnco.ourdvsss.com,Bilibili
-  - DOMAIN,1gr3uomttgr31hcjo8yzdnpy.ourdvsss.com,Bilibili
-  - DOMAIN,1gr3uomttgr31hcjtgezdkcy.ourdvsss.com,Bilibili
-  - DOMAIN,1gr4uqmtt8y41hcjigazdqca.ourdvsss.com,Bilibili
-  - DOMAIN,1gr4uqmtt8y41hcjigazdqce.ourdvsss.com,Bilibili
-  - DOMAIN,1gr4uqmtt8y41hcjigazdqco.ourdvsss.com,Bilibili
-  - DOMAIN,1gr4uqmtt8y41hcjigazdqpo.ourdvsss.com,Bilibili
-  - DOMAIN,1gr4uqmtt8y41hcjzgwzdkqe.ourdvsss.com,Bilibili
-  - DOMAIN,1gr5dgmttgha1hcj38yzdcca.ourdvsss.com,Bilibili
-  - DOMAIN,1gr5dgmttgha1hcj38yzdcco.ourdvsss.com,Bilibili
-  - DOMAIN,1gr5dgmttgha1hcj38yzdkca.ourdvsss.com,Bilibili
-  - DOMAIN,1gr5dgmttgha1hcj38yzdkco.ourdvsss.com,Bilibili
-  - DOMAIN,1gr5dgmttgha1hcj38yzdkpe.ourdvsss.com,Bilibili
-  - DOMAIN,1gr5dgmttgha1hcj38yzdkpy.ourdvsss.com,Bilibili
-  - DOMAIN,1gr5dgmttgha1hcj38yzdkqy.ourdvsss.com,Bilibili
-  - DOMAIN,1gr5dgmttgha1hcj3gczdcpa.ourdvsss.com,Bilibili
-  - DOMAIN,1gr5dgmttgha1hcj3gczdcpe.ourdvsss.com,Bilibili
-  - DOMAIN,1gr5dgmttgha1hcj3gczdcpo.ourdvsss.com,Bilibili
-  - DOMAIN,1gr5dgmttgha1hcj3gczdcqy.ourdvsss.com,Bilibili
-  - DOMAIN,1gr5dgmttgha1hcttgrzdnpo.ourdvsss.com,Bilibili
-  - DOMAIN,1graukmttga4nhcjtgozdgce.ourdvsss.com,Bilibili
-  - DOMAIN,218-91-225-1.ksyungslb.com,Bilibili
-  - DOMAIN,219-155-150-1.ksyungslb.com,Bilibili
-  - DOMAIN,222-188-6-1.ksyungslb.com,Bilibili
-  - DOMAIN,36-104-134-1.ksyungslb.com,Bilibili
-  - DOMAIN,36-25-252-1.ksyungslb.com,Bilibili
-  - DOMAIN,3ge3drmttga5nhcbqge3ur.ourdvsss.com,Bilibili
-  - DOMAIN,3geauymtsgrzdnqbofa5do.ourdvsss.com,Bilibili
-  - DOMAIN,3geauymtsgrzdnqbofa5dy.ourdvsss.com,Bilibili
-  - DOMAIN,3geauymtsgrzdrcbzfahue.ourdvsss.com,Bilibili
-  - DOMAIN,3geauymtsgrzdrcbzfahuk.ourdvsss.com,Bilibili
-  - DOMAIN,4go41hcjtgazdoctqge4o.ourdvsss.com,Bilibili
-  - DOMAIN,p-bstarstatic.akamaized.net,Bilibili
-  - DOMAIN,p.bstarstatic.com,Bilibili
-  - DOMAIN,upos-bstar-mirrorakam.akamaized.net,Bilibili
-  - DOMAIN,upos-bstar1-mirrorakam.akamaized.net,Bilibili
-  - DOMAIN-SUFFIX,acg.tv,Bilibili
-  - DOMAIN-SUFFIX,acgvideo.com,Bilibili
-  - DOMAIN-SUFFIX,animetamashi.cn,Bilibili
-  - DOMAIN-SUFFIX,animetamashi.com,Bilibili
-  - DOMAIN-SUFFIX,anitama.cn,Bilibili
-  - DOMAIN-SUFFIX,anitama.net,Bilibili
-  - DOMAIN-SUFFIX,b23.tv,Bilibili
-  - DOMAIN-SUFFIX,baka.im,Bilibili
-  - DOMAIN-SUFFIX,bigfun.cn,Bilibili
-  - DOMAIN-SUFFIX,bigfunapp.cn,Bilibili
-  - DOMAIN-SUFFIX,bili22.cn,Bilibili
-  - DOMAIN-SUFFIX,bili2233.cn,Bilibili
-  - DOMAIN-SUFFIX,bili23.cn,Bilibili
-  - DOMAIN-SUFFIX,bili33.cn,Bilibili
-  - DOMAIN-SUFFIX,biliapi.com,Bilibili
-  - DOMAIN-SUFFIX,biliapi.net,Bilibili
-  - DOMAIN-SUFFIX,bilibili.cc,Bilibili
-  - DOMAIN-SUFFIX,bilibili.cn,Bilibili
-  - DOMAIN-SUFFIX,bilibili.co,Bilibili
-  - DOMAIN-SUFFIX,bilibili.com,Bilibili
-  - DOMAIN-SUFFIX,bilibili.net,Bilibili
-  - DOMAIN-SUFFIX,bilibili.tv,Bilibili
-  - DOMAIN-SUFFIX,bilibiligame.cn,Bilibili
-  - DOMAIN-SUFFIX,bilibiligame.co,Bilibili
-  - DOMAIN-SUFFIX,bilibiligame.net,Bilibili
-  - DOMAIN-SUFFIX,bilibilipay.cn,Bilibili
-  - DOMAIN-SUFFIX,bilibilipay.com,Bilibili
-  - DOMAIN-SUFFIX,bilicdn1.com,Bilibili
-  - DOMAIN-SUFFIX,bilicdn2.com,Bilibili
-  - DOMAIN-SUFFIX,bilicdn3.com,Bilibili
-  - DOMAIN-SUFFIX,bilicdn4.com,Bilibili
-  - DOMAIN-SUFFIX,bilicdn5.com,Bilibili
-  - DOMAIN-SUFFIX,bilicomics.com,Bilibili
-  - DOMAIN-SUFFIX,biligame.cn,Bilibili
-  - DOMAIN-SUFFIX,biligame.co,Bilibili
-  - DOMAIN-SUFFIX,biligame.com,Bilibili
-  - DOMAIN-SUFFIX,biligame.net,Bilibili
-  - DOMAIN-SUFFIX,biligo.com,Bilibili
-  - DOMAIN-SUFFIX,biliimg.com,Bilibili
-  - DOMAIN-SUFFIX,biliintl.com,Bilibili
-  - DOMAIN-SUFFIX,biliplus.com,Bilibili
-  - DOMAIN-SUFFIX,bilivideo.cn,Bilibili
-  - DOMAIN-SUFFIX,bilivideo.com,Bilibili
-  - DOMAIN-SUFFIX,bilivideo.net,Bilibili
-  - DOMAIN-SUFFIX,corari.com,Bilibili
-  - DOMAIN-SUFFIX,dreamcast.hk,Bilibili
-  - DOMAIN-SUFFIX,dyhgames.com,Bilibili
-  - DOMAIN-SUFFIX,hdslb.com,Bilibili
-  - DOMAIN-SUFFIX,hdslb.com.w.kunlunhuf.com,Bilibili
-  - DOMAIN-SUFFIX,hdslb.com.w.kunlunpi.com,Bilibili
-  - DOMAIN-SUFFIX,hdslb.net,Bilibili
-  - DOMAIN-SUFFIX,hdslb.org,Bilibili
-  - DOMAIN-SUFFIX,im9.com,Bilibili
-  - DOMAIN-SUFFIX,maoercdn.com,Bilibili
-  - DOMAIN-SUFFIX,mcbbs.net,Bilibili
-  - DOMAIN-SUFFIX,mincdn.com,Bilibili
-  - DOMAIN-SUFFIX,sharejoytech.com,Bilibili
-  - DOMAIN-SUFFIX,smtcdns.net,Bilibili
-  - DOMAIN-SUFFIX,upos-hz-mirrorakam.akamaized.net,Bilibili
-  - DOMAIN-SUFFIX,uposdash-302-bilivideo.yfcdn.net,Bilibili
-  - DOMAIN-SUFFIX,yo9.com,Bilibili
-  - IP-CIDR,106.75.74.76/32,Bilibili
-  - IP-CIDR,111.206.25.147/32,Bilibili
-  - IP-CIDR,119.3.238.64/32,Bilibili
-  - IP-CIDR,120.92.108.182/32,Bilibili
-  - IP-CIDR,120.92.113.99/32,Bilibili
-  - IP-CIDR,120.92.153.217/32,Bilibili
-  - IP-CIDR,134.175.207.130/32,Bilibili
-  - IP-CIDR,203.107.1.0/24,Bilibili
+  - DOMAIN,0gr4uqmtt8y41hcjsgrzdrc31.ourdvsss.com,DIRECT
+  - DOMAIN,0gr4uqmtt8y41hcjsgrzdrc3s.ourdvsss.com,DIRECT
+  - DOMAIN,0gr4uqmtt8y41hcjsgrzdrc3z.ourdvsss.com,DIRECT
+  - DOMAIN,0gr4uqmtt8y41hcjsgrzdrctt.ourdvsss.com,DIRECT
+  - DOMAIN,0gr4uqmtt8y41hcjsgrzdrctu.ourdvsss.com,DIRECT
+  - DOMAIN,0gr4uqmtt8y41hcjz8yzdnc31.ourdvsss.com,DIRECT
+  - DOMAIN,0gr4uqmtt8y41hcjz8yzdnc3t.ourdvsss.com,DIRECT
+  - DOMAIN,0gr4uqmtt8y41hcjzgazdrpba.ourdvsss.com,DIRECT
+  - DOMAIN,0gr4uqmtt8y41hcjzgazdrpbz.ourdvsss.com,DIRECT
+  - DOMAIN,0gr4uqmtt8y41hcjzgazdrpjt.ourdvsss.com,DIRECT
+  - DOMAIN,0gr5dgmttgha1hcj38yzdncb3.ourdvsss.com,DIRECT
+  - DOMAIN,112-81-125-43.dhost.00cdn.com,DIRECT
+  - DOMAIN,113-219-145-1.ksyungslb.com,DIRECT
+  - DOMAIN,114-236-92-129.ksyungslb.com,DIRECT
+  - DOMAIN,180-101-74-1.ksyungslb.com,DIRECT
+  - DOMAIN,1geadrmttge3nhcjwgazdope.ourdvsss.com,DIRECT
+  - DOMAIN,1geadrmttge3nhcjwgwzdqqe.ourdvsss.com,DIRECT
+  - DOMAIN,1gr3uomttgr31hcjo8yzdnco.ourdvsss.com,DIRECT
+  - DOMAIN,1gr3uomttgr31hcjo8yzdnpy.ourdvsss.com,DIRECT
+  - DOMAIN,1gr3uomttgr31hcjtgezdkcy.ourdvsss.com,DIRECT
+  - DOMAIN,1gr4uqmtt8y41hcjigazdqca.ourdvsss.com,DIRECT
+  - DOMAIN,1gr4uqmtt8y41hcjigazdqce.ourdvsss.com,DIRECT
+  - DOMAIN,1gr4uqmtt8y41hcjigazdqco.ourdvsss.com,DIRECT
+  - DOMAIN,1gr4uqmtt8y41hcjigazdqpo.ourdvsss.com,DIRECT
+  - DOMAIN,1gr4uqmtt8y41hcjzgwzdkqe.ourdvsss.com,DIRECT
+  - DOMAIN,1gr5dgmttgha1hcj38yzdcca.ourdvsss.com,DIRECT
+  - DOMAIN,1gr5dgmttgha1hcj38yzdcco.ourdvsss.com,DIRECT
+  - DOMAIN,1gr5dgmttgha1hcj38yzdkca.ourdvsss.com,DIRECT
+  - DOMAIN,1gr5dgmttgha1hcj38yzdkco.ourdvsss.com,DIRECT
+  - DOMAIN,1gr5dgmttgha1hcj38yzdkpe.ourdvsss.com,DIRECT
+  - DOMAIN,1gr5dgmttgha1hcj38yzdkpy.ourdvsss.com,DIRECT
+  - DOMAIN,1gr5dgmttgha1hcj38yzdkqy.ourdvsss.com,DIRECT
+  - DOMAIN,1gr5dgmttgha1hcj3gczdcpa.ourdvsss.com,DIRECT
+  - DOMAIN,1gr5dgmttgha1hcj3gczdcpe.ourdvsss.com,DIRECT
+  - DOMAIN,1gr5dgmttgha1hcj3gczdcpo.ourdvsss.com,DIRECT
+  - DOMAIN,1gr5dgmttgha1hcj3gczdcqy.ourdvsss.com,DIRECT
+  - DOMAIN,1gr5dgmttgha1hcttgrzdnpo.ourdvsss.com,DIRECT
+  - DOMAIN,1graukmttga4nhcjtgozdgce.ourdvsss.com,DIRECT
+  - DOMAIN,218-91-225-1.ksyungslb.com,DIRECT
+  - DOMAIN,219-155-150-1.ksyungslb.com,DIRECT
+  - DOMAIN,222-188-6-1.ksyungslb.com,DIRECT
+  - DOMAIN,36-104-134-1.ksyungslb.com,DIRECT
+  - DOMAIN,36-25-252-1.ksyungslb.com,DIRECT
+  - DOMAIN,3ge3drmttga5nhcbqge3ur.ourdvsss.com,DIRECT
+  - DOMAIN,3geauymtsgrzdnqbofa5do.ourdvsss.com,DIRECT
+  - DOMAIN,3geauymtsgrzdnqbofa5dy.ourdvsss.com,DIRECT
+  - DOMAIN,3geauymtsgrzdrcbzfahue.ourdvsss.com,DIRECT
+  - DOMAIN,3geauymtsgrzdrcbzfahuk.ourdvsss.com,DIRECT
+  - DOMAIN,4go41hcjtgazdoctqge4o.ourdvsss.com,DIRECT
+  - DOMAIN,p-bstarstatic.akamaized.net,DIRECT
+  - DOMAIN,p.bstarstatic.com,DIRECT
+  - DOMAIN,upos-bstar-mirrorakam.akamaized.net,DIRECT
+  - DOMAIN,upos-bstar1-mirrorakam.akamaized.net,DIRECT
+  - DOMAIN-SUFFIX,acg.tv,DIRECT
+  - DOMAIN-SUFFIX,acgvideo.com,DIRECT
+  - DOMAIN-SUFFIX,animetamashi.cn,DIRECT
+  - DOMAIN-SUFFIX,animetamashi.com,DIRECT
+  - DOMAIN-SUFFIX,anitama.cn,DIRECT
+  - DOMAIN-SUFFIX,anitama.net,DIRECT
+  - DOMAIN-SUFFIX,b23.tv,DIRECT
+  - DOMAIN-SUFFIX,baka.im,DIRECT
+  - DOMAIN-SUFFIX,bigfun.cn,DIRECT
+  - DOMAIN-SUFFIX,bigfunapp.cn,DIRECT
+  - DOMAIN-SUFFIX,bili22.cn,DIRECT
+  - DOMAIN-SUFFIX,bili2233.cn,DIRECT
+  - DOMAIN-SUFFIX,bili23.cn,DIRECT
+  - DOMAIN-SUFFIX,bili33.cn,DIRECT
+  - DOMAIN-SUFFIX,biliapi.com,DIRECT
+  - DOMAIN-SUFFIX,biliapi.net,DIRECT
+  - DOMAIN-SUFFIX,bilibili.cc,DIRECT
+  - DOMAIN-SUFFIX,bilibili.cn,DIRECT
+  - DOMAIN-SUFFIX,bilibili.co,DIRECT
+  - DOMAIN-SUFFIX,bilibili.com,DIRECT
+  - DOMAIN-SUFFIX,bilibili.net,DIRECT
+  - DOMAIN-SUFFIX,bilibili.tv,DIRECT
+  - DOMAIN-SUFFIX,bilibiligame.cn,DIRECT
+  - DOMAIN-SUFFIX,bilibiligame.co,DIRECT
+  - DOMAIN-SUFFIX,bilibiligame.net,DIRECT
+  - DOMAIN-SUFFIX,bilibilipay.cn,DIRECT
+  - DOMAIN-SUFFIX,bilibilipay.com,DIRECT
+  - DOMAIN-SUFFIX,bilicdn1.com,DIRECT
+  - DOMAIN-SUFFIX,bilicdn2.com,DIRECT
+  - DOMAIN-SUFFIX,bilicdn3.com,DIRECT
+  - DOMAIN-SUFFIX,bilicdn4.com,DIRECT
+  - DOMAIN-SUFFIX,bilicdn5.com,DIRECT
+  - DOMAIN-SUFFIX,bilicomics.com,DIRECT
+  - DOMAIN-SUFFIX,biligame.cn,DIRECT
+  - DOMAIN-SUFFIX,biligame.co,DIRECT
+  - DOMAIN-SUFFIX,biligame.com,DIRECT
+  - DOMAIN-SUFFIX,biligame.net,DIRECT
+  - DOMAIN-SUFFIX,biligo.com,DIRECT
+  - DOMAIN-SUFFIX,biliimg.com,DIRECT
+  - DOMAIN-SUFFIX,biliintl.com,DIRECT
+  - DOMAIN-SUFFIX,biliplus.com,DIRECT
+  - DOMAIN-SUFFIX,bilivideo.cn,DIRECT
+  - DOMAIN-SUFFIX,bilivideo.com,DIRECT
+  - DOMAIN-SUFFIX,bilivideo.net,DIRECT
+  - DOMAIN-SUFFIX,corari.com,DIRECT
+  - DOMAIN-SUFFIX,dreamcast.hk,DIRECT
+  - DOMAIN-SUFFIX,dyhgames.com,DIRECT
+  - DOMAIN-SUFFIX,hdslb.com,DIRECT
+  - DOMAIN-SUFFIX,hdslb.com.w.kunlunhuf.com,DIRECT
+  - DOMAIN-SUFFIX,hdslb.com.w.kunlunpi.com,DIRECT
+  - DOMAIN-SUFFIX,hdslb.net,DIRECT
+  - DOMAIN-SUFFIX,hdslb.org,DIRECT
+  - DOMAIN-SUFFIX,im9.com,DIRECT
+  - DOMAIN-SUFFIX,maoercdn.com,DIRECT
+  - DOMAIN-SUFFIX,mcbbs.net,DIRECT
+  - DOMAIN-SUFFIX,mincdn.com,DIRECT
+  - DOMAIN-SUFFIX,sharejoytech.com,DIRECT
+  - DOMAIN-SUFFIX,smtcdns.net,DIRECT
+  - DOMAIN-SUFFIX,upos-hz-mirrorakam.akamaized.net,DIRECT
+  - DOMAIN-SUFFIX,uposdash-302-bilivideo.yfcdn.net,DIRECT
+  - DOMAIN-SUFFIX,yo9.com,DIRECT
+  - IP-CIDR,106.75.74.76/32,DIRECT
+  - IP-CIDR,111.206.25.147/32,DIRECT
+  - IP-CIDR,119.3.238.64/32,DIRECT
+  - IP-CIDR,120.92.108.182/32,DIRECT
+  - IP-CIDR,120.92.113.99/32,DIRECT
+  - IP-CIDR,120.92.153.217/32,DIRECT
+  - IP-CIDR,134.175.207.130/32,DIRECT
+  - IP-CIDR,203.107.1.0/24,DIRECT
   # Youtube
   - DOMAIN-SUFFIX,googlevideo.com,YouTube
   - DOMAIN-SUFFIX,youtube.com,YouTube
