@@ -982,6 +982,7 @@ proxy-groups:
 rules:
 # 拦截敏感网站
 # Youtube
+  - DOMAIN-KEYWORD,youtube,REJECT
   - DOMAIN-SUFFIX,ggpht.cn,REJECT
   - DOMAIN-SUFFIX,ggpht.com,REJECT
   - DOMAIN-SUFFIX,googlevideo.com,REJECT
@@ -1166,6 +1167,7 @@ rules:
   - IP-CIDR,216.73.80.0/20,REJECT
   - IP-CIDR6,2620:120:e000::/40,REJECT
   # Twitter
+  - DOMAIN-SUFFIX,x.com,REJECT
   - DOMAIN-SUFFIX,ads-twitter.com,REJECT
   - DOMAIN-SUFFIX,cms-twdigitalassets.com,REJECT
   - DOMAIN-SUFFIX,periscope.tv,REJECT
