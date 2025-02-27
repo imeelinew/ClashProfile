@@ -22,7 +22,7 @@ dns:
     - https://sm2.doh.pub/dns-query
     - https://dns.alidns.com/dns-query
     - https://223.5.5.5/dns-query
-    - https://223.6.6.6/dns-quer
+    - https://223.6.6.6/dns-query
   fallback:
     - https://dns.pub/dns-query
     - https://doh.pub/dns-query
@@ -1167,7 +1167,7 @@ rules:
   - IP-CIDR,216.73.80.0/20,REJECT
   - IP-CIDR6,2620:120:e000::/40,REJECT
   # Twitter
-  - DOMAIN-KEYWORD,x.com,REJECT
+  - DOMAIN-SUFFIX,x.com,REJECT
   - DOMAIN-SUFFIX,ads-twitter.com,REJECT
   - DOMAIN-SUFFIX,cms-twdigitalassets.com,REJECT
   - DOMAIN-SUFFIX,periscope.tv,REJECT
@@ -1200,6 +1200,8 @@ rules:
   - IP-CIDR,202.160.128.0/22,REJECT
   - IP-CIDR,209.237.192.0/19,REJECT
   - IP-CIDR,69.195.160.0/19,REJECT
+  # Porn sites
+  - DOMAIN-KEYWORD,porn,REJECT
   # 正常规则
   - DOMAIN,assets1.xboxlive.com,DIRECT
   - DOMAIN,assets2.xboxlive.com,DIRECT
